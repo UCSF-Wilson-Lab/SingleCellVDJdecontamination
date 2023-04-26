@@ -38,11 +38,11 @@ if __name__ == '__main__':
   
   ### 1. Extract CellUMIs from BAM files
   print("\n>> 1. Extract CellUMI info from Celranger VDJ BAM files\n\n")
-  #subprocess.call(["1_vdj_single_cell_BAM_to_cellUMIs.py","-i",input_vdj_dir,"-o",results_dir,"-t",THREADS])
+  subprocess.call(["1_vdj_single_cell_BAM_to_cellUMIs.py","-i",input_vdj_dir,"-o",results_dir,"-t",THREADS])
   
   ### 2. Find all contaminated CellUMIs
   print("\n>> 2. Find and list all contaminated CellUMIs\n\n")
-  #subprocess.call(["2_identify_single_cell_vdj_contam.py","-i",results_dir])
+  subprocess.call(["2_identify_single_cell_vdj_contam.py","-i",results_dir])
   
   ### 3. Determine which reads to keep
   print("\n>> 3. Find and list all contaminated CellUMIs\n\n")
